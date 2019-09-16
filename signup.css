@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    font-family: 'Product Sans Regular';
+}
+
+@font-face {
+    font-family: 'Product Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Regular'), url('./google-sans-cufonfonts-webfont/ProductSans-Regular.woff') format('woff');
+}
+.m5{
+    background: linear-gradient(-20deg, #6e45e2 0%, #88afd3ad 100%);
+    height:100%;
+}
+.login-image{
+    width:90%;
+    margin-left: 5%;
+    height:90%;
+}
+.logo-login:hover{
+    width:45%;
+    height:45%;
+}
+.logo-login{
+    height:40%;
+    width:40%;
+    transition: 0.3s ease-out;
+}
+.form-container{
+    margin:10%;
+    padding:7%;
+    background: white;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.37);
+}
+button{
+    background: linear-gradient(-20deg, #6e45e2 0%, #88afd3ad 100%);
+    width:100%; 
+}
+button:hover{
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.7);
+}

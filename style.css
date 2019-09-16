@@ -9,6 +9,8 @@
     font-weight: normal;
     src: local('Product Sans Thin Regular'), url('./google-sans-cufonfonts-webfont/ProductSans-Regular.woff') format('woff');
 }
+@import url('https://fonts.googleapis.com/css?family=Amita&display=swap');
+/* font-family: 'Amita', cursive; */
 body{
     width: 100%;
     margin: 0%;
@@ -21,7 +23,7 @@ body{
 }
 .dark{
     border:0;
-    margin-left:-15px;
+    /* margin-left:-15px; */
     background-image: linear-gradient(-20deg, #6e45e2 0%, #88afd3ad 100%);
     height: 100vh;
     width:100vw;
@@ -30,6 +32,7 @@ body{
     right:0;
     position: absolute;
     height: 100px;
+    width:100%;
     margin-top:15px;
     color: white;
     transition:0.5s;
@@ -79,7 +82,7 @@ body{
 
 .intro-image-container{
     position: absolute;
-    top:100px;
+    top:150px;
     width:100%;
 }
 .intro-image{
@@ -88,7 +91,11 @@ body{
 }
 @media screen and (max-width:768px){
     .show-menu,.hide-menu{
+        color:black;
         display: block;
+    }
+    .show-menu{
+        color:white;
     }
     .scroll{
         position: absolute;
