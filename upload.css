@@ -49,4 +49,7 @@ button:hover {
         margin-left: auto;
         margin-right: auto;
     }
+    .form-container{
+        padding:5px;
+    }
 }
