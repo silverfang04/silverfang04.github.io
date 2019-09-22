@@ -91,7 +91,8 @@ body{
     width:100%;
 }
 .intro-image{
-    padding:20px;
+    padding:20px !important;
+    padding-left: 60px !important;
     width:100%;
 }
 .quote-container{
@@ -103,6 +104,7 @@ body{
     font-size:50px;
     margin-top:50px;
 }
+
 @media screen and (max-width:768px){
     .show-menu,.hide-menu{
         /* color:white; */
