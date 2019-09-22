@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,67 +13,95 @@
   <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="materialize/js/materialize.js"></script>
-
+  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
   <title>buyOwned</title>
 </head>
+
 <body>
   <div class="container-fluid">
-    <div class="dark">
-      <div class="intro-image-container row">
-        <img src="images/intro.svg" class="intro-image col m5">
-      </div>
-        <div class="header" id="head">
+    <div class="col m12">
+      <div class="dark row">
+        <div class="intro-image-container row">
+          <img src="images/intro.svg" class="intro-image col m5 s12">
+
+          <div class="col m5 s12 offset-m2 quote-container">
+           <span class="quote">“A room without books is like a body without a soul.”</span>
+          </div>
+
+        </div>
+        <div class="header scroll" id="head">
           <input type="checkbox" id="chk">
           <label for="chk" class="show-menu">
-              <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
           </label>
-          <img src="images/logo.png" class="left" height="120" width="120">
+
+          <img src="images/logo_black.png" class="left" height="90" width="90">
 
           <ul class="menu">
-              <a href="#" class="home">Home</a>
-              <a href="login.html" class="login">Login</a>
-              <a href="signup.html" class="signup">Signup</a>
-              <a href="#" class="contact"> Contact</a>
-              
-              <label for="chk" class="hide-menu">
-                  <i class="fas fa-times"></i>
-              </label>             
+            <a href="#" class="home">Home</a>
+            <a href="login.html" class="login">Login</a>
+            <a href="signup.html" class="signup">Signup</a>
+            <a href="#" class="contact"> Contact</a>
+
+            <label for="chk" class="hide-menu">
+              <i class="fas fa-times"></i>
+            </label>
           </ul>
         </div>
-        
+      </div>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
+      <h1>asdasdasdasda</h1>
     </div>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  <h1>asdasdasdasda</h1>
-  </div>
 </body>
+<script>
+  var nav = document.querySelector('.header'); // Identify targe
+  var menu = document.querySelectorAll('.menu a');
+  nav.classList.remove("scroll");
+  for (let i = 0; i < menu.length; i++)
+    menu[i].style.color = "white";
+  window.addEventListener('scroll', function (event) { // To listen for event
+
+
+    if (window.scrollY <= 85) { // Just an example
+      nav.classList.remove("scroll"); // or default color
+      for (let i = 0; i < menu.length; i++)
+        menu[i].style.color = "white";
+    } else {
+      nav.classList.add("scroll"); // or default color
+      for (let i = 0; i < menu.length; i++)
+        menu[i].style.color = "black";
+    }
+  });
+</script>
+
 </html>
