@@ -18,6 +18,7 @@ body{
 }
 .container-fluid{
     width:100%;
+    height: 100%;
     /* background: black; */
     overflow: hidden;
     padding:0;
@@ -42,6 +43,7 @@ body{
     transition:0.5s;
     padding: 5px 10px;
     overflow: hidden;
+    z-index: 4;
 }
 .menu{
     float: right;
@@ -101,10 +103,37 @@ body{
 }
 .quote{
     font-family: 'Sacramento', cursive;
-    font-size:50px;
+    font-size:4em;
     margin-top:50px;
 }
-
+.cart{
+    background: white !important;
+    color:black !important;
+}
+.buy{
+    background:#673ab7 !important;
+}
+.card{
+    margin:10px !important;   
+}
+.card-action{
+    display: flex;
+    justify-content: space-between;
+}
+.product-container{
+    margin-top: 20px;
+    padding:10px;
+}
+.footer{
+    background:#333333;
+    color:white;
+    padding:10px;
+    text-align: center;
+}
+.footer-icon{
+    margin-top:20px ;
+    margin: 10px;
+}
 @media screen and (max-width:768px){
     .show-menu,.hide-menu{
         /* color:white; */
@@ -142,5 +171,8 @@ body{
     }
     #chk:checked ~ .menu{
         right:0;
+    }
+    .quote{
+        font-size:3rem;
     }
 }
