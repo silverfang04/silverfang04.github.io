@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
 
 @font-face {
@@ -14,6 +8,13 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Amita&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 /* font-family: 'Amita', cursive; */
 body {
