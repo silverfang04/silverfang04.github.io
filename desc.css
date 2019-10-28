@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+
+@font-face {
+    font-family: 'Product Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Thin Regular'), url('./google-sans-cufonfonts-webfont/ProductSans-Regular.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Amita&display=swap');
+*{
+    font-family: 'Product Sans Regular';
+}
+/* font-family: 'Amita', cursive; */
+body {
+    width: 100%;
+    margin: 0%;
+}
+.scroll {
+    background: #eee;
+    color: white;
+}
+
+.header {
+    right: 0;
+    position: fixed;
+    height: 85px;
+    width: 100%;
+    color: white;
+    transition: 0.5s;
+    padding: 5px 10px;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.menu {
+    float: right;
+    line-height: 80px;
+}
+
+.menu a {
+    color: black;
+    border-radius: 4px;
+    margin: 0 20px;
+    font-family: 'Product Sans Regular';
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    /* border:2px solid white; */
+
+    transition: 0.3s;
+}
+
+.show-menu {
+    float: right;
+    color: #333333;
+
+}
+
+.show-menu i {
+    line-height: 80px;
+}
+
+.show-menu,
+.hide-menu {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu:hover,
+.hide-menu:hover {
+    color: #333333;
+}
+
+.menu a:hover {
+    color: #333333;
+    box-shadow: 0px 13px 5px -10px rgba(0, 3, 51, 0.43);
+    text-decoration: none;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+.product-details{
+    padding: 30px !important;
+}
+.name{
+    padding:10px;
+}
+.price{
+    font-size:30px;
+    padding:10px;
+}
+.details{
+    font-size: 20px;
+    padding:10px;
+}
+.authorname{
+    display: flex;
+    justify-content: flex-end;
+}
+.seller-desc{
+    padding:10px;
+    margin:0px 10px 20px 10px !important;
+    border:2px solid #CCD5D6;
+    border-radius: 5px;
+    /* border-width: thin; */
+}
+.footer {
+    background: #333333;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+.footer-icon {
+    margin: 5px;
+}
+@media screen and (max-width:768px) {
+
+    .show-menu,
+    .hide-menu {
+        /* color:white; */
+        display: block;
+    }
+
+    .show-menu {
+        color: #333333;
+    }
+
+    .scroll {
+        position: absolute;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        height: 100vh;
+        background: #eeeeee;
+        right: -200%;
+        top: 0;
+        color: black;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+
+    .menu a {
+        display: block;
+        color: black !important;
+        padding: 20px;
+    }
+
+    .hide-menu {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    #chk:checked~.menu {
+        right: 0;
+    }
+
+}
