@@ -15,13 +15,14 @@
   <script src="materialize/js/materialize.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+  <script src="particles.js"></script>
   <title>buyOwned</title>
 </head>
 
 <body>
   <div class="container-fluid">
     <div class="col m12">
-      <div class="dark">
+      <div class="dark" id="particles-js">
         <div class="intro-image-container row">
           <img src="images/intro.svg" class="intro-image col m5 s12">
 
@@ -225,6 +226,11 @@
     </div>
 </body>
 <script>
+
+  particlesJS.load('particles-js', 'assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+
   $('.carousel.carousel-slider').carousel({
     fullWidth: true,
     indicators: true
